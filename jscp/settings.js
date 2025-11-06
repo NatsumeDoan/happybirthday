@@ -9,7 +9,7 @@ let settings = {
     matrixText: 'HAPPYBIRTHDAY',
     matrixColor1: '#ff69b4', // Màu pink mẫu
     matrixColor2: '#ff1493', // Màu pink mẫu
-    sequence: 'HAPPY|BIRTHDAY|TO|YOU|❤',
+    sequence: 'HAPPY|BIRTHDAY|TO|YOU|MISA|❤',
     sequenceColor: '#ff69b4', // Màu pink mẫu
     gift: './gif/Cat Love GIF by KIKI.gif',
     pages: [],
@@ -199,7 +199,7 @@ function initializeDefaultSettings() {
         matrixText: 'HAPPYBIRTHDAY',
         matrixColor1: '#ff69b4', // Màu pink mẫu
         matrixColor2: '#ff1493', // Màu pink mẫu
-        sequence: 'HAPPY|BIRTHDAY|TO|YOU|❤',
+        sequence: 'HAPPY|BIRTHDAY|TO|YOU|MISA|❤',
         sequenceColor: '#ff69b4', // Màu pink mẫu
         gift: '../gif/Cat Love GIF by KIKI.gif',
         enableBook: false,
