@@ -478,13 +478,11 @@ S.UI = (function () {
   // Class + styles
   videoEl.className = 'fullscreen-video';
   videoEl.style.display = 'block';
- videoEl.style.height = '100%';
-videoEl.style.width = 'auto';
-videoEl.style.objectFit = 'contain'; // hoặc 'cover' tùy ý
-videoEl.style.position = 'fixed';
-videoEl.style.top = '50%';
-videoEl.style.left = '50%';
-videoEl.style.transform = 'translate(-50%, -50%)';
+  videoEl.style.width = 'auto';
+  videoEl.style.height = '100%';
+  videoEl.style.objectFit = 'cover';
+  videoEl.style.zIndex = '999';
+  videoEl.style.position= 'relative';
   videoEl.style.zIndex = '999';
 
   // Thuộc tính (cách tương thích hơn)
