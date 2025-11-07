@@ -476,21 +476,18 @@ S.UI = (function () {
   const videoEl = document.createElement('video');
 
   // Class + styles
-  videoEl.className = 'fullscreen-video';
+videoEl.className = 'fullscreen-video';
   videoEl.style.display = 'block';
   videoEl.style.width = 'auto';
   videoEl.style.height = '100%';
-  videoEl.style.objectFit = 'cover';
+videoEl.style.objectFit = 'contain'; // hoặc 'cover' tùy ý
+videoEl.style.position = 'fixed';
+videoEl.style.top = '50%';
+videoEl.style.left = '50%';
+videoEl.style.transform = 'translate(-50%, -50%)';
   videoEl.style.zIndex = '999';
   videoEl.style.position= 'relative';
-  videoEl.style.zIndex = '999';
-
-  // Thuộc tính (cách tương thích hơn)
-  videoEl.setAttribute('autoplay', '');
-  videoEl.setAttribute('playsinline', ''); // playsinline cho iOS
-  // Nếu muốn ẩn controls thì không set `controls`
-
-  // Thêm source
+                
   const source = document.createElement('source');
   source.src = './image/video.mp4'; // kiểm tra đường dẫn
   source.type = 'video/mp4';
